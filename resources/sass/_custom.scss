@@ -1,0 +1,126 @@
+.about {
+  box-shadow: 10px 10px 17px -3px rgba(0,0,0,0.30);
+}
+
+.jumbotron1 {
+  background:  url("/images/cover.jpg");
+}
+
+.jumbotron2 {
+  background:  url("/storage/images/notebook.jpg");
+}
+
+.jumbotron1, .jumbotron2 {
+  position: relative;
+  background-size: cover;
+  color: #fff;
+  //text-shadow: 0px 0px 10px white;
+  text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+.jumbotron1 > .overlay, .jumbotron2 > .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(24, 24, 15, 0.6);
+  z-index: 1;
+}
+
+.jumbotron1 > .inner {
+  margin: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.jumbotron2 > .inner {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-join{
+  border: 1px rgb(232, 208, 90) solid;
+  color: #fff;
+}
+
+.btn-join:hover{
+  border: 1px rgb(243, 215, 73) solid;
+  color: #fff;
+}
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  /*
+ * Sidebar
+ */
+
+.sidebar {
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  list-style-position:inside;
+  border-top: 1px solid #ccc;
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  font-weight: 600;
+}
+
+.sidebar .nav-link:hover{
+  color: inherit;
+  background-color: #ccc;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
